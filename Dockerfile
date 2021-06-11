@@ -27,4 +27,4 @@ FROM nginxinc/nginx-unprivileged
 
 USER root
 
-COPY --from=build-step /app/dist/frontend /usr/share/nginx/html
+COPY --from=build-step /app/dist/angular-tour-of-heroes /usr/share/nginx/html
