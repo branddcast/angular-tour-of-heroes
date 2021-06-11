@@ -11,6 +11,11 @@ COPY package.json /app
 
 RUN npm install npm@7.17.0
 
+#Update jasmine pkgs
+RUN npm install jasmine-core@latest
+RUN npm install karma-jasmine-html-reporter@latest
+RUN npm install @types/jasmine@latest
+
 RUN npm install
 
 COPY . /app
